@@ -1,0 +1,20 @@
+{
+  "name": "react-native-hyperswitch-kount",
+  "version": "0.1.0",
+  "summary": "test",
+  "homepage": "https://github.com/sh-iv-am/react-native-hyperswitch-kount#readme",
+  "license": "MIT",
+  "authors": "shivam <shivam.shashank@juspay.in> (https://github.com/sh-iv-am)",
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source": {
+    "git": "https://github.com/sh-iv-am/react-native-hyperswitch-kount.git",
+    "tag": "0.1.0"
+  },
+  "source_files": "ios/**/*.{h,m,mm,swift}",
+  "vendored_frameworks": "ios/xcframeworks/KountDataCollector.xcframework",
+  "dependencies": {
+    "React-Core": []
+  }
+}

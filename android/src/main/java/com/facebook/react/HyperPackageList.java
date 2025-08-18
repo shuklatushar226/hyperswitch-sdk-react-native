@@ -7,12 +7,6 @@ import android.content.res.Resources;
 
 import com.facebook.react.shell.MainPackageConfig;
 import com.facebook.react.shell.MainReactPackage;
-import com.horcrux.svg.SvgPackage;
-import com.proyecto26.inappbrowser.RNInAppBrowserPackage;
-import com.reactnativepagerview.PagerViewPackage;
-import com.swmansion.gesturehandler.RNGestureHandlerPackage;
-import com.swmansion.rnscreens.RNScreensPackage;
-import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
 
 import java.util.Arrays;
 import java.util.ArrayList;
@@ -63,15 +57,7 @@ public class HyperPackageList {
 
   public ArrayList<ReactPackage> getPackages() {
     return new ArrayList<>(Arrays.asList(
-      new MainReactPackage(mConfig),
-//      new RNSentryPackage(),
-      new RNGestureHandlerPackage(),
-//      new HyperswitchKountPackage(),
-      new RNInAppBrowserPackage(),
-      new PagerViewPackage(),
-      new SafeAreaContextPackage(),
-      new RNScreensPackage(),
-      new SvgPackage()
+      new MainReactPackage(mConfig)
     ));
   }
 }

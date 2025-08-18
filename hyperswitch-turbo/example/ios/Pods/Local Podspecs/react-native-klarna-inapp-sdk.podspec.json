@@ -1,0 +1,61 @@
+{
+  "name": "react-native-klarna-inapp-sdk",
+  "version": "2.4.4",
+  "summary": "This library wraps Klarna Mobile SDK and exposes its functionality as React Native components.",
+  "homepage": "https://github.com/klarna/react-native-klarna-inapp-sdk#readme",
+  "license": "Apache-2.0",
+  "authors": "Mobile SDK <mobile.sdk@klarna.com>",
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source": {
+    "git": "https://github.com/klarna/react-native-klarna-inapp-sdk.git",
+    "tag": "v2.4.4"
+  },
+  "source_files": "ios/Sources/**/*.{pch,h,m,mm,swift}",
+  "requires_arc": true,
+  "prefix_header_file": "ios/Sources/PrefixHeader.pch",
+  "compiler_flags": "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32",
+  "dependencies": {
+    "React-Core": [],
+    "RCT-Folly": [
+      "2024.01.01.00"
+    ],
+    "glog": [],
+    "React-RCTFabric": [],
+    "ReactCodegen": [],
+    "RCTRequired": [],
+    "RCTTypeSafety": [],
+    "ReactCommon/turbomodule/bridging": [],
+    "ReactCommon/turbomodule/core": [],
+    "React-NativeModulesApple": [],
+    "Yoga": [],
+    "React-Fabric": [],
+    "React-graphics": [],
+    "React-utils": [],
+    "React-featureflags": [],
+    "React-debug": [],
+    "React-ImageManager": [],
+    "React-rendererdebug": [],
+    "DoubleConversion": [],
+    "hermes-engine": [],
+    "KlarnaMobileSDK": [
+      "2.6.29"
+    ]
+  },
+  "pod_target_xcconfig": {
+    "HEADER_SEARCH_PATHS": "\"$(PODS_ROOT)/boost\" \"$(PODS_ROOT)/Headers/Private/Yoga\"",
+    "CLANG_CXX_LANGUAGE_STANDARD": "c++20",
+    "OTHER_CPLUSPLUSFLAGS": "$(inherited) -DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -Wno-comma -Wno-shorten-64-to-32"
+  },
+  "testspecs": [
+    {
+      "name": "RNKlarnaMobileSDKTests",
+      "test_type": "unit",
+      "source_files": "ios/Tests/**/*.{h,m,mm,swift}",
+      "dependencies": {
+        "OCMock": []
+      }
+    }
+  ]
+}

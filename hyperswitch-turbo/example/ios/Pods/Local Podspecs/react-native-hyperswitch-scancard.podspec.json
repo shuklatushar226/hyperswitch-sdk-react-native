@@ -1,0 +1,34 @@
+{
+  "name": "react-native-hyperswitch-scancard",
+  "version": "0.3.2",
+  "summary": "test",
+  "homepage": "https://github.com/harsh-Juspay/react-native-hyperswitch-scancard#readme",
+  "license": "MIT",
+  "authors": "harsh-Juspay",
+  "platforms": {
+    "ios": "13.0"
+  },
+  "swift_versions": "5.0",
+  "requires_arc": true,
+  "source": {
+    "git": "https://github.com/harsh-Juspay/react-native-hyperswitch-scancard.git",
+    "tag": "0.3.2"
+  },
+  "frameworks": [
+    "Foundation",
+    "UIKit"
+  ],
+  "weak_frameworks": [
+    "AVKit",
+    "CoreML",
+    "VideoToolbox",
+    "Vision",
+    "AVFoundation"
+  ],
+  "source_files": "ios/Source/**/*.{h,m,mm,swift}",
+  "vendored_frameworks": "ios/Frameworks/HyperswitchScanCard.xcframework",
+  "dependencies": {
+    "React-Core": []
+  },
+  "swift_version": "5.0"
+}

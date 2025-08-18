@@ -1,0 +1,20 @@
+{
+  "name": "react-native-hyperswitch-netcetera-3ds",
+  "version": "0.1.3",
+  "summary": "test",
+  "homepage": "https://github.com/25harsh/react-native-hyperswitch-netcetera-3ds#readme",
+  "license": "MIT",
+  "authors": "25harsh",
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source": {
+    "git": "https://github.com/25harsh/react-native-hyperswitch-netcetera-3ds.git",
+    "tag": "0.1.3"
+  },
+  "source_files": "ios/Source/**/*.{h,m,mm,swift}",
+  "vendored_frameworks": "ios/Frameworks/ThreeDS_SDK.xcframework",
+  "dependencies": {
+    "React-Core": []
+  }
+}
